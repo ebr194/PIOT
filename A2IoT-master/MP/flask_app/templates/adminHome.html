@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>BELC Library - Admin Dashboard</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="../static/css/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+ <style>
+	.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+    </style>
+	<script src="../static/js/jquery.ui.widget.js"></script>
+
+   <style>
+ .trash { color:rgb(209, 91, 71); }
+.panel-body .checkbox { display:inline-block;margin:0px; }
+.list-group { margin-bottom:0px; }
+   </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+              <li role="presentation" class="active"><a href="/admin_dashboard">Home</a></li>
+              <li role="presentation"><a href="/add_book">Add Book</a></li>
+              <li role="presentation"><a href="/delete_book">Delete Book</a></li>
+              <li role="presentation"><a href="/get_stats">Statistics</a></li>
+              <li role="presentation" ><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+        <div>
+        <img src="../static/css/belclogo.png" style="width:40px; height:40px;border-radius: 25px;float: left;">
+              <h3 class="text-muted"style="padding-top:8px; padding-left:15px;">BELC Library</h3></div>
+      </div>
+        <div class="container" style="padding:50px;"><h2>Welcome to the Admin Dashboard!</h2></div>
+        <div class="container" style="padding-left:50px;">
+        <p>Dashboard functionality:</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;Add Book:</b> Add Book to the library Database</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;Delete Book:</b> Delete a book from the Database</p>
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;Statistics:</b> Get Graph Reports for the number of borrowed books</p>
+            <p>Pretty self explanatory, have fun!</p>
+        </div>
+        <footer class="footer" style="padding: 30px;">
+        <p>&copy; BELC Library 2019</p>
+      </footer>
+    </div>
+  </body>
+</html>
